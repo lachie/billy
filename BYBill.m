@@ -72,10 +72,11 @@
         plainString = [fancyString string];
       }
 
-      [doc setDocumentAttributes: self.pdfAttributes];
+      [self.pdfAttributes setObject: plainString forKey: PDFDocumentSubjectAttribute];
     }
 
-    [self.pdfAttributes setObject: plainString forKey: PDFDocumentSubjectAttribute];
+    [doc setDocumentAttributes: self.pdfAttributes];
+
     return [doc writeToURL: [doc documentURL]];
   }
 
