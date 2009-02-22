@@ -1,0 +1,35 @@
+h1. description
+
+A very simple cocoa app for editing PDF metadata. Hooks into Spotlight for the educational value to me.
+
+h1. motivation
+
+We bought a "Fujitsu ScanSnap":http://www.youtube.com/watch?v=YP-2IptM-TY which is freaking awesome.
+
+All this talk about "to-everything bucket-or-not":http://al3x.net/2009/01/31/against-everything-buckets.html and "openmeta":http://ironicsoftware.com/community/comments.php?DiscussionID=632&page=1#Item_0 made me want to look into the whole OS X metadata thing.
+
+As it turns out, there's a whole lot of yummy tech happening just under the surface, just beyond the reach of the developer. Typically apple.
+
+So anyway. I built this wee app to have a look around. Since I'm just dealing with PDFs I can use the PDFKit api and don't have to worry about breaking the space time continuum as openmeta is accused of doing.
+
+h1. mechanics
+
+You just read the PDF file, touch up its attributes and write it back. Spotlight notices (via FSEvents) and re-indexes it straight away.
+
+After that you can use finder smart folders to be smart n stuff.
+
+Although Bindings is still a little elusive to me, I'm getting there finally!
+
+h1. todo
+
+# add prefs
+# unhardcode the path it reads
+# add some processed/unprocessed logic
+# add some searching
+# add some grouping (might just leave it to finder though)
+
+h1. license
+
+Copyright 2009 Lachie Cox
+
+Licensed to you under the MIT license.
