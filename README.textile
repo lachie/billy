@@ -16,7 +16,9 @@ As it turns out, there's a whole lot of yummy tech happening just under the surf
 
 h1. mechanics
 
-So anyway. I built this wee app to have a look around. Since I'm just dealing with PDFs I can use the PDFKit api and don't have to worry about breaking the space time continuum as openmeta is accused of doing.
+So anyway. I built this wee app to have a look around. 
+
+As it turns out, since I'm just dealing with PDFs I can use the PDFKit api and don't have to worry about breaking the space time continuum as openmeta is accused of doing.
 
 You just read the PDF file, touch up its attributes and write it back. Spotlight notices (via FSEvents) and re-indexes it straight away.
 
